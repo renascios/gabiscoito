@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-principal: #f8f1bd;
+    --cor-fundo: #6f4e37;
+    --cor-cards: #954535;
+}
+body{
+    font-family: "Domine", serif;
+    font-size: 18px;
+    background-color: var(--cor-fundo);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-color: var(--cor-cards);
+}
+header img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor-principal);
+    padding: 50px;
+}
+picture{
+    display: block;
+    background-image: url("../imagens/watermark.jpg");
+    min-height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+#filtros{
+    padding-left: 50px;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+#filtros button{
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Domine", serif;
+    font-size: large;
+    font-weight: bolder;
+    width: 90px;
+    height: 50px;
+    border: none;
+    transition: transform 0.2s;
+}
+#filtros button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imagens/background-quem-somos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 80vh;
+}
+main section{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--cor-fundo);
+    font-size: larger;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section h2{
+    padding: 10px;
+    margin: 20px;
+    color: hotpink;
+}
+main section p{
+    padding: 10px;
+    margin: 10px;
+}
+.cardapio{
+    padding-left: 50px;
+    margin-top: 40px;
+    color: var(--cor-principal);
+}
+hr{
+    height: 3px;
+    border: none;
+    margin: 10px 50px;
+    background-color: var(--cor-principal);
+}
+#produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+.card-produto{
+    background-color: var(--cor-principal);
+    color: var(--cor-cards);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+.card-produto img{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
+.card-produto:hover{
+    transform: translateY(-5px);
+}
+#carrinho-lista{
+    position: fixed;
+    right: 50px;
+    z-index: 1000;
+    bottom: 50px;
+}
+#carrinho-lista button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    background: none;
+    cursor: pointer;
+}
+#carrinho-lista button img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+}
+#carrinho-lista button img:hover{
+    transform: translateY(-5px);
+}
+.oculto{
+    display: none;
+}
+#lista{
+    width: 300px;
+    height: 300px;
+    background-color: var(--cor-principal);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
