@@ -1,34 +1,38 @@
 [
     {
         "id": 1,
-        "nome": "coxinha",
+        "nome": "Coxinha",
         "preco": 0.50,
         "categoria":"salgado",
         "descricao": "coxinha de frango, carne, queijo, camarao ou calabresa",
-        "imagem":"imagens/coxinha.jpg"
+        "imagem":"imagens/coxinha.jpg",
+        "icone": "imagens/coxinhaicon.png"
     },
     {
         "id": 2,
-        "nome": "bolo chocolate",
+        "nome": "Bolo de chocolate",
         "preco": 20,
         "categoria":"doce",
         "descricao": "bolo de chocolate medio",
-        "imagem":"imagens/bolo_chocolate.jpg"
+        "imagem":"imagens/bolo_chocolate.jpg",
+        "icone": "imagens/boloicon.png"
     },
     {
         "id":3,
-        "nome":"brigadeiro",
+        "nome":"Brigadeiro",
         "preco":1.50,
         "categoria":"doce",
         "descricao":"brigadeiro comum",
-        "imagem":"imagens/brigadeiro.jpg"
+        "imagem":"imagens/brigadeiro.jpg",
+        "icone": "imagens/brigadeiroicon.png"
     },
     {
         "id":4,
-        "nome":"biscoito",
+        "nome":"Biscoito",
         "preco":2.50,
         "categoria":"doce",
         "descricao":"biscoito amanteigado com recheio de goiabada",
-        "imagem":"imagens/biscoito.jpg"
+        "imagem":"imagens/biscoito.jpg",
+        "icone": "imagens/biscoitoicon.png"
     }
 ]
